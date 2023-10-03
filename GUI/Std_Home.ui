@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>901</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>안녕하세요!</string>
+   </property>
+   <widget class="QLabel" name="faceId">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>150</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string>FACE_ID</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="scheduleGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>110</y>
+      <width>581</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>📅 개인 시간표</string>
+    </property>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>511</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>80</number>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <row>
+      <property name="text">
+       <string>1교시</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>2교시</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>3교시</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>4교시</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>5교시</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>6교시</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>7교시</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>8교시</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>9교시</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>월</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>화</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>수</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>목</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>금</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="infoWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>250</y>
+      <width>151</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="infoLayout">
+     <item>
+      <layout class="QVBoxLayout" name="labelLayout">
+       <item>
+        <widget class="QLabel" name="majorLabel">
+         <property name="text">
+          <string>학과</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="nameLabel">
+         <property name="font">
+          <font>
+           <family>Agency FB</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>이름</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="studentNumberLabel">
+         <property name="text">
+          <string>학번</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="idLabel">
+         <property name="text">
+          <string>아이디</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="gradReqLabel">
+         <property name="text">
+          <string>졸업요건</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="valueLayout">
+       <item>
+        <widget class="QLabel" name="majorValueLabel">
+         <property name="text">
+          <string>000</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="nameValueLabel">
+         <property name="text">
+          <string>000</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="studentNumberValueLabel">
+         <property name="text">
+          <string>000</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="idValueLabel">
+         <property name="text">
+          <string>000</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="gradReqValueLabel">
+         <property name="text">
+          <string>137</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>20</y>
+      <width>581</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>📢 공지사항</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>541</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout"/>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="editInfoButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>380</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 255);</string>
+    </property>
+    <property name="text">
+     <string>개인정보 수정</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

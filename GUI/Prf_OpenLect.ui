@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>421</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>개설할 강의 정보를 입력해주세요.</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>381</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <property name="spacing">
+      <number>50</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="lectCodeLabel">
+         <property name="text">
+          <string>과목번호</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lectNumValue"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="lectMajorLabel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>개설학과</string>
+         </property>
+         <property name="margin">
+          <number>3</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="lectMajorValue">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>IT융합전공</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AI융합전공</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>화학공학전공</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QLabel" name="lectNameLabel">
+         <property name="text">
+          <string>강의명</string>
+         </property>
+         <property name="margin">
+          <number>3</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lectNameValue"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <property name="fieldGrowthPolicy">
+        <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+       </property>
+       <property name="rowWrapPolicy">
+        <enum>QFormLayout::DontWrapRows</enum>
+       </property>
+       <property name="horizontalSpacing">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>강의시간</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QComboBox" name="comboBox_4">
+           <item>
+            <property name="text">
+             <string>월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>화</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>수</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>목</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>금</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_5">
+           <item>
+            <property name="text">
+             <string>1교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>4교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>5교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>6교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>7교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>9교시</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_6">
+           <item>
+            <property name="text">
+             <string>1교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>4교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>5교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>6교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>7교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>9교시</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QComboBox" name="comboBox_8">
+           <item>
+            <property name="text">
+             <string>없음</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>화</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>수</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>목</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>금</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_9">
+           <item>
+            <property name="text">
+             <string>없음</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>4교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>5교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>6교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>7교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>9교시</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_7">
+           <item>
+            <property name="text">
+             <string>없음</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>4교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>5교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>6교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>7교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8교시</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>9교시</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="error">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="applyButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>410</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>적용</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
