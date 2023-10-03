@@ -92,7 +92,7 @@ class Prf_LectInfo(QWidget):
         cap = cv2.VideoCapture(0)  # 웹캠 번호 (0은 기본 웹캠을 나타냄)
 
         # 총 저장할 시간 : 60(1분)
-        total_time = 1
+        total_time = 60
 
         # 1초마다 이미지 저장
         for i in range(total_time):

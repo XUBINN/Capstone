@@ -46,11 +46,6 @@
     <attribute name="horizontalHeaderStretchLastSection">
      <bool>false</bool>
     </attribute>
-    <row>
-     <property name="text">
-      <string>0</string>
-     </property>
-    </row>
     <column>
      <property name="text">
       <string>과목번호</string>
@@ -86,6 +81,14 @@
      <width>75</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgb(206, 229, 206);
+color:black;
+border-color:(0, 0, 0);
+border-style:solid;
+border-width:1px;
+border-radius:5px;</string>
    </property>
    <property name="text">
     <string>출결조회</string>

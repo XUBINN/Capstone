@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>540</width>
-    <height>619</height>
+    <width>641</width>
+    <height>706</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,8 +21,8 @@
     <rect>
      <x>20</x>
      <y>30</y>
-     <width>501</width>
-     <height>481</height>
+     <width>601</width>
+     <height>651</height>
     </rect>
    </property>
    <property name="title">
@@ -31,10 +31,10 @@
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>200</x>
       <y>10</y>
       <width>201</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
@@ -42,11 +42,14 @@
       <widget class="QLabel" name="hello_label">
        <property name="font">
         <font>
-         <family>Agency FB</family>
-         <pointsize>12</pointsize>
+         <family>LG Smart UI Bold</family>
+         <pointsize>20</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 85, 0)</string>
        </property>
        <property name="text">
         <string>출결조회</string>
@@ -59,15 +62,15 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>160</y>
-      <width>471</width>
-      <height>311</height>
+      <y>180</y>
+      <width>581</width>
+      <height>461</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>11</pointsize>
      </font>
     </property>
     <property name="title">
@@ -80,13 +83,13 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>30</y>
-       <width>451</width>
-       <height>261</height>
+       <y>40</y>
+       <width>561</width>
+       <height>411</height>
       </rect>
      </property>
      <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>150</number>
+      <number>185</number>
      </attribute>
      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
       <bool>false</bool>
@@ -123,23 +126,28 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>120</x>
       <y>60</y>
-      <width>301</width>
-      <height>82</height>
+      <width>331</width>
+      <height>91</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="leftMargin">
-        <number>80</number>
+        <number>50</number>
        </property>
        <property name="rightMargin">
         <number>0</number>
        </property>
        <item>
         <widget class="QLabel" name="hello_label_4">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>강좌번호</string>
          </property>
@@ -147,6 +155,11 @@
        </item>
        <item>
         <widget class="QLabel" name="hello_label_2">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>강좌명</string>
          </property>
@@ -154,6 +167,11 @@
        </item>
        <item>
         <widget class="QLabel" name="hello_label_3">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>교수</string>
          </property>
@@ -165,6 +183,11 @@
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QLabel" name="lect_num">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -172,6 +195,17 @@
        </item>
        <item>
         <widget class="QComboBox" name="lect_combo">
+         <property name="minimumSize">
+          <size>
+           <width>170</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
          <item>
           <property name="text">
            <string>---강좌 선택---</string>
@@ -183,6 +217,11 @@
         <widget class="QLabel" name="lect_prf">
          <property name="enabled">
           <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
          </property>
          <property name="styleSheet">
           <string notr="true">color: rgb(0, 0, 0);</string>

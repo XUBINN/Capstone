@@ -8,6 +8,7 @@ from PyQt5 import uic
 import cv2
 from PIL import Image
 import io
+import os
 
 def clickable(widget): # QLabel 클릭 이벤트
     class Filter(QLabel):
@@ -39,7 +40,7 @@ class RegistrationWindow(QMainWindow) :
 
         self.take_picture_button.clicked.connect(self.face_thread.face_id)
         
-        self.camera_capture_button.clicked.connect(lambda: self.face_thread.face_id_save(self.current_face))
+        self.camera_capture_button.clicked.connect(lambda: self.face_thread.face_id_save(self.current_face, user_number = self.number_input.text().strip()))
         self.register_button.clicked.connect(self.signup_function) # 회원가입 버튼 클릭 시
         self.pushButton.clicked.connect(self.back) # 뒤로가기 버튼. 이름 바꿀 것!
         self.face_thread.change_pixmap_signal.connect(self.update_camera_label)
@@ -178,32 +179,45 @@ class FaceIdThread(QThread):
         self.stopped = False
         self.cap = cv2.VideoCapture(0)
 
-    def face_id_save(self, current_face):
+    def face_id_save(self, current_face, user_number):
         buffer = io.BytesIO()
-        if self.cap.isOpened():
-            img = cv2.cvtColor(self.frame, cv2.COLOR_BGR2RGB)
-            h, w, c = img.shape
-            qImg = QtGui.QImage(img.data, w, h, w * c, QtGui.QImage.Format_RGB888)
-            pixmap = QtGui.QPixmap.fromImage(qImg)
-            p = pixmap.scaled(int(w * 80 / h), 80, QtCore.Qt.KeepAspectRatio)
 
-            cv2.imwrite('train_images/'+current_face+'.jpeg', img)
-            with open('train_images/'+current_face+'.jpeg', 'rb') as f:
-                img_str = f.read()
+        print(f"user_number: {user_number}")
+        print(f"current_face: {current_face}")
 
-            if current_face == 'front':
-                self.change_front_pixmap_signal.emit(p)
-                self.images[0] = img_str
-            elif current_face == 'right':
-                self.change_right_pixmap_signal.emit(p)
-                self.images[1] = img_str
-            elif current_face == 'left':
-                self.change_left_pixmap_signal.emit(p)
-                self.images[2] = img_str
+        if len(user_number) == 0 or current_face is None:
+            print("user_number or current_face is None")
+            return
 
-            print('captured')
-            self.cap.release()
-            self.stop()
+        else :
+            if self.cap.isOpened():
+                img = cv2.cvtColor(self.frame, cv2.COLOR_BGR2RGB)
+                h, w, c = img.shape
+                qImg = QtGui.QImage(img.data, w, h, w * c, QtGui.QImage.Format_RGB888)
+                pixmap = QtGui.QPixmap.fromImage(qImg)
+                p = pixmap.scaled(int(w * 80 / h), 80, QtCore.Qt.KeepAspectRatio)
+
+                print(user_number)
+
+                save_directory = 'face_recog/knn_examples/train/'+user_number + '/'
+                os.makedirs(save_directory, exist_ok=True)  # 디렉토리만 생성
+                cv2.imwrite(os.path.join(save_directory, current_face+'.jpg'), self.frame) 
+                with open(save_directory+current_face+'.jpg', 'rb') as f:
+                    img_str = f.read()
+
+                if current_face == 'front':
+                    self.change_front_pixmap_signal.emit(p)
+                    self.images[0] = img_str
+                elif current_face == 'right':
+                    self.change_right_pixmap_signal.emit(p)
+                    self.images[1] = img_str
+                elif current_face == 'left':
+                    self.change_left_pixmap_signal.emit(p)
+                    self.images[2] = img_str
+
+                print('captured')
+                self.cap.release()
+                self.stop()
 
     def face_id(self):
         self.start_camera()

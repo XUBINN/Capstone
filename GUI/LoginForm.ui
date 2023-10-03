@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>608</width>
-    <height>430</height>
+    <width>710</width>
+    <height>520</height>
    </rect>
   </property>
   <property name="tabletTracking">
@@ -16,6 +16,12 @@
   <property name="windowTitle">
    <string>Login Form</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <property name="tabShape">
    <enum>QTabWidget::Rounded</enum>
   </property>
@@ -23,19 +29,29 @@
    <widget class="QLabel" name="title_label">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>30</y>
-      <width>421</width>
+      <x>30</x>
+      <y>20</y>
+      <width>651</width>
       <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>20</pointsize>
+      <family>돋움</family>
+      <pointsize>22</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0, 85, 0)</string>
     </property>
     <property name="text">
      <string>울산대학교 출석시스템</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QGroupBox" name="groupBox">
@@ -43,9 +59,14 @@
      <rect>
       <x>70</x>
       <y>80</y>
-      <width>461</width>
-      <height>281</height>
+      <width>581</width>
+      <height>371</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgb(206, 229, 206);
+border-radius:20px;
+style:solid;</string>
     </property>
     <property name="title">
      <string/>
@@ -53,118 +74,32 @@
     <widget class="QLabel" name="login_label">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>20</y>
-       <width>211</width>
+       <x>130</x>
+       <y>60</y>
+       <width>331</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>15</pointsize>
+       <family>돋움</family>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
      <property name="text">
       <string>[로그인]</string>
      </property>
-    </widget>
-    <widget class="QWidget" name="loginFormWidget">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>60</y>
-       <width>381</width>
-       <height>101</height>
-      </rect>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
-     <layout class="QHBoxLayout" name="loginFormLayout">
-      <item>
-       <layout class="QFormLayout" name="credentialsFormLayout">
-        <property name="labelAlignment">
-         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-        </property>
-        <property name="formAlignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-        <item row="0" column="0">
-         <widget class="QLabel" name="roleLabel">
-          <property name="text">
-           <string>구분</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="QLabel" name="idLabel">
-          <property name="text">
-           <string>아이디</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <widget class="QLineEdit" name="idInput"/>
-        </item>
-        <item row="2" column="0">
-         <widget class="QLabel" name="passwordLabel">
-          <property name="text">
-           <string>비밀번호</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QLineEdit" name="passwordInput"/>
-        </item>
-        <item row="0" column="1">
-         <layout class="QHBoxLayout" name="horizontalLayout_3">
-          <item>
-           <widget class="QRadioButton" name="studentRadioButton">
-            <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="text">
-             <string>학생</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QRadioButton" name="professorRadioButton">
-            <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="text">
-             <string>교수</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </item>
-      <item alignment="Qt::AlignRight|Qt::AlignVCenter">
-       <widget class="QPushButton" name="loginButton">
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>70</height>
-         </size>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="tabletTracking">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string>로그인</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
     </widget>
     <widget class="QCommandLinkButton" name="registerLinkButton">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>210</y>
+       <x>10</x>
+       <y>310</y>
        <width>141</width>
        <height>51</height>
       </rect>
@@ -178,6 +113,15 @@
            <red>0</red>
            <green>0</green>
            <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>206</red>
+           <green>229</green>
+           <blue>206</blue>
           </color>
          </brush>
         </colorrole>
@@ -196,6 +140,24 @@
            <red>0</red>
            <green>0</green>
            <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>206</red>
+           <green>229</green>
+           <blue>206</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>206</red>
+           <green>229</green>
+           <blue>206</blue>
           </color>
          </brush>
         </colorrole>
@@ -219,6 +181,15 @@
           </color>
          </brush>
         </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>206</red>
+           <green>229</green>
+           <blue>206</blue>
+          </color>
+         </brush>
+        </colorrole>
         <colorrole role="Text">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
@@ -234,6 +205,24 @@
            <red>0</red>
            <green>0</green>
            <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>206</red>
+           <green>229</green>
+           <blue>206</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>206</red>
+           <green>229</green>
+           <blue>206</blue>
           </color>
          </brush>
         </colorrole>
@@ -257,6 +246,15 @@
           </color>
          </brush>
         </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>206</red>
+           <green>229</green>
+           <blue>206</blue>
+          </color>
+         </brush>
+        </colorrole>
         <colorrole role="Text">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
@@ -275,6 +273,24 @@
           </color>
          </brush>
         </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>206</red>
+           <green>229</green>
+           <blue>206</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>206</red>
+           <green>229</green>
+           <blue>206</blue>
+          </color>
+         </brush>
+        </colorrole>
         <colorrole role="PlaceholderText">
          <brush brushstyle="NoBrush">
           <color alpha="128">
@@ -286,6 +302,13 @@
         </colorrole>
        </disabled>
       </palette>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>12</pointsize>
+       <underline>true</underline>
+      </font>
      </property>
      <property name="cursor">
       <cursorShape>PointingHandCursor</cursorShape>
@@ -310,6 +333,186 @@
       <string/>
      </property>
     </widget>
+    <widget class="QWidget" name="loginFormWidget">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>100</y>
+       <width>391</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="loginFormLayout">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QFormLayout" name="credentialsFormLayout">
+        <property name="labelAlignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="formAlignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="roleLabel">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>구분</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QRadioButton" name="studentRadioButton">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>학생</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="professorRadioButton">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>교수</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="idLabel">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>아이디</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="idInput">
+          <property name="font">
+           <font>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background:rgb(255, 255, 255);</string>
+          </property>
+          <property name="frame">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="passwordLabel">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>비밀번호</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="passwordInput">
+          <property name="styleSheet">
+           <string notr="true">background:rgb(255, 255, 255);
+border-radius:100px;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item alignment="Qt::AlignRight|Qt::AlignVCenter">
+       <widget class="QPushButton" name="loginButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:rgb(186, 200, 192);
+border-radius:5px;
+color:black;
+border-color:(0, 0, 0);
+border-style:solid;
+border-width:1px;
+</string>
+        </property>
+        <property name="text">
+         <string>로그인</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -317,7 +520,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>608</width>
+     <width>710</width>
      <height>22</height>
     </rect>
    </property>

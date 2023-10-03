@@ -17,9 +17,9 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>60</y>
+     <y>30</y>
      <width>891</width>
-     <height>371</height>
+     <height>401</height>
     </rect>
    </property>
    <property name="title">
@@ -31,7 +31,7 @@
       <x>10</x>
       <y>30</y>
       <width>871</width>
-      <height>331</height>
+      <height>351</height>
      </rect>
     </property>
     <attribute name="horizontalHeaderCascadingSectionResizes">
@@ -77,6 +77,19 @@
      <height>23</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgb(206, 229, 206);
+color:black;
+border-color:(0, 0, 0);
+border-style:solid;
+border-width:1px;
+border-radius:5px;</string>
+   </property>
    <property name="text">
     <string>출결조회</string>
    </property>
@@ -89,6 +102,14 @@
      <width>75</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgb(206, 229, 206);
+color:black;
+border-color:(0, 0, 0);
+border-style:solid;
+border-width:1px;
+border-radius:5px;</string>
    </property>
    <property name="text">
     <string>출석처리</string>

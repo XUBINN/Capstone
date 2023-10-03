@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>950</width>
-    <height>500</height>
+    <width>979</width>
+    <height>572</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,8 +18,8 @@
     <rect>
      <x>20</x>
      <y>20</y>
-     <width>901</width>
-     <height>471</height>
+     <width>941</width>
+     <height>531</height>
     </rect>
    </property>
    <property name="title">
@@ -28,8 +28,8 @@
    <widget class="QLabel" name="faceId">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>50</y>
+      <x>80</x>
+      <y>80</y>
       <width>150</width>
       <height>191</height>
      </rect>
@@ -50,8 +50,8 @@
    <widget class="QGroupBox" name="scheduleGroupBox">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>110</y>
+      <x>310</x>
+      <y>150</y>
       <width>581</width>
       <height>341</height>
      </rect>
@@ -158,8 +158,8 @@
    <widget class="QWidget" name="infoWidget">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>250</y>
+      <x>80</x>
+      <y>280</y>
       <width>151</width>
       <height>131</height>
      </rect>
@@ -253,10 +253,10 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>310</x>
       <y>20</y>
       <width>581</width>
-      <height>80</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
@@ -272,30 +272,57 @@
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>20</y>
+       <y>40</y>
        <width>541</width>
-       <height>51</height>
+       <height>61</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout"/>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">color:rgb(8, 0, 255)</string>
+        </property>
+        <property name="text">
+         <string>  제1기「초중등 창업 체험교육 대학생 서포터즈」모집안내</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">color:rgb(8, 0, 255)</string>
+        </property>
+        <property name="text">
+         <string>  [K-MOOC] 2023-2학기 신규강좌 모니터링단 모집안내 (1차)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
    <widget class="QPushButton" name="editInfoButton">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>380</y>
+      <x>80</x>
+      <y>430</y>
       <width>101</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>돋움</family>
       <pointsize>8</pointsize>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 255);</string>
+     <string notr="true">background:rgb(206, 229, 206);
+color:black;
+border-color:(0, 0, 0);
+border-style:solid;
+border-width:1px;
+border-radius:5px;</string>
     </property>
     <property name="text">
      <string>개인정보 수정</string>

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -23,13 +23,14 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>130</y>
+     <y>120</y>
      <width>911</width>
-     <height>451</height>
+     <height>481</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>바탕체</family>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -56,8 +57,27 @@
          </item>
          <item>
           <widget class="QPushButton" name="dup_check_button">
+           <property name="minimumSize">
+            <size>
+             <width>60</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>굴림체</family>
+            </font>
+           </property>
            <property name="cursor">
             <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(206, 229, 206);
+color:black;
+border-color:(0, 0, 0);
+border-style:solid;
+border-width:1px;
+border-radius:5px;</string>
            </property>
            <property name="text">
             <string>중복확인</string>
@@ -131,6 +151,9 @@
       <layout class="QHBoxLayout" name="horizontalLayout_10">
        <property name="rightMargin">
         <number>83</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
        </property>
        <item>
         <widget class="QLineEdit" name="password_input">
@@ -257,10 +280,10 @@
    <widget class="QWidget" name="horizontalLayoutWidget_6">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>390</y>
+      <x>520</x>
+      <y>410</y>
       <width>371</width>
-      <height>44</height>
+      <height>72</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_6">
@@ -269,14 +292,25 @@
      </property>
      <item>
       <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
        <property name="font">
         <font>
-         <family>Agency FB</family>
+         <family>LG PC</family>
          <pointsize>12</pointsize>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(0, 0, 255);</string>
+        <string notr="true">background:rgb(255, 255, 255);
+color:black;
+border-color:(0, 0, 0);
+border-style:solid;
+border-width:1px;
+</string>
        </property>
        <property name="text">
         <string>&lt; 뒤로가기</string>
@@ -285,16 +319,27 @@
      </item>
      <item>
       <widget class="QPushButton" name="register_button">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
        <property name="font">
         <font>
-         <family>Agency FB</family>
+         <family>LG PC</family>
          <pointsize>12</pointsize>
          <weight>50</weight>
          <bold>false</bold>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(0, 0, 255);</string>
+        <string notr="true">background:rgb(255, 255, 255);
+color:black;
+border-color:(0, 0, 0);
+border-style:solid;
+border-width:1px;
+</string>
        </property>
        <property name="text">
         <string>가입하기 &gt;</string>
@@ -307,10 +352,15 @@
     <property name="geometry">
      <rect>
       <x>470</x>
-      <y>10</y>
+      <y>30</y>
       <width>400</width>
       <height>300</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>굴림</family>
+     </font>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -348,8 +398,8 @@
     <property name="geometry">
      <rect>
       <x>720</x>
-      <y>310</y>
-      <width>151</width>
+      <y>330</y>
+      <width>155</width>
       <height>41</height>
      </rect>
     </property>
@@ -382,6 +432,14 @@
        <property name="cursor">
         <cursorShape>PointingHandCursor</cursorShape>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background:rgb(206, 229, 206);
+color:black;
+border-color:(0, 0, 0);
+border-style:solid;
+border-width:1px;
+border-radius:5px;</string>
+       </property>
        <property name="text">
         <string>촬영시작</string>
        </property>
@@ -395,6 +453,19 @@
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       <property name="font">
+        <font>
+         <family>굴림</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:rgb(206, 229, 206);
+color:black;
+border-color:(0, 0, 0);
+border-style:solid;
+border-width:1px;
+border-radius:5px;</string>
+       </property>
        <property name="text">
         <string>저장</string>
        </property>
@@ -405,18 +476,21 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>310</y>
       <width>381</width>
-      <height>121</height>
+      <height>131</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_14">
      <property name="spacing">
       <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
      </property>
      <item>
       <widget class="QLabel" name="face_id_label">
@@ -546,10 +620,15 @@
     <property name="geometry">
      <rect>
       <x>470</x>
-      <y>310</y>
+      <y>340</y>
       <width>241</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>굴림</family>
+     </font>
     </property>
     <property name="text">
      <string>촬영할 얼굴 : None</string>
@@ -559,26 +638,37 @@
   <widget class="QLabel" name="title_label">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>0</y>
-     <width>431</width>
+     <x>530</x>
+     <y>20</y>
+     <width>391</width>
      <height>91</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>20</pointsize>
+     <family>LG Smart UI Bold</family>
+     <pointsize>22</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <strikeout>false</strikeout>
+     <stylestrategy>PreferDefault</stylestrategy>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(0, 85, 0)</string>
    </property>
    <property name="text">
     <string>울산대학교 출석시스템</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="registration_label">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>90</y>
+     <x>50</x>
+     <y>70</y>
      <width>171</width>
      <height>31</height>
     </rect>
@@ -589,6 +679,9 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(0, 85, 0)</string>
    </property>
    <property name="text">
     <string>[회원가입]</string>

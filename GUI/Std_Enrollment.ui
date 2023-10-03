@@ -16,8 +16,8 @@
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>10</y>
+     <x>80</x>
+     <y>20</y>
      <width>821</width>
      <height>31</height>
     </rect>
@@ -67,6 +67,20 @@
     </item>
     <item>
      <widget class="QPushButton" name="pushButton">
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(206, 229, 206);
+color:black;
+border-color:(0, 0, 0);
+border-style:solid;
+border-width:1px;
+border-radius:5px;</string>
+      </property>
       <property name="text">
        <string>조회</string>
       </property>
@@ -77,14 +91,14 @@
   <widget class="QTableWidget" name="lect_table">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>90</y>
-     <width>821</width>
-     <height>361</height>
+     <x>30</x>
+     <y>70</y>
+     <width>901</width>
+     <height>371</height>
     </rect>
    </property>
    <attribute name="horizontalHeaderDefaultSectionSize">
-    <number>160</number>
+    <number>177</number>
    </attribute>
    <attribute name="horizontalHeaderStretchLastSection">
     <bool>true</bool>
@@ -118,11 +132,25 @@
   <widget class="QPushButton" name="EnrollmentButton">
    <property name="geometry">
     <rect>
-     <x>810</x>
-     <y>60</y>
-     <width>75</width>
-     <height>23</height>
+     <x>830</x>
+     <y>450</y>
+     <width>91</width>
+     <height>25</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgb(206, 229, 206);
+color:black;
+border-color:(0, 0, 0);
+border-style:solid;
+border-width:1px;
+border-radius:5px;</string>
    </property>
    <property name="text">
     <string>수강신청</string>
